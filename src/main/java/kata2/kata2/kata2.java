@@ -5,7 +5,6 @@
 package kata2.kata2;
 
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 
 /**
@@ -14,10 +13,10 @@ import java.util.Map;
  */
 
 
-public class kata2 {
+public class kata2{
     public static void main(String[] args){
         Map<Integer, Integer>histogram = new HashMap<Integer, Integer>();
-        int[] data = {1,2,2, 4,5,7,7,7,2,4,5,10,9, 1,0};
+        Integer [] data = {1,2,2, 4,5,7,7,7,2,4,5,10,9, 1,0};
        
         
         

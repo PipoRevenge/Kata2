@@ -11,22 +11,20 @@ import java.util.Map;
  * @author aleja
  * kata 2.3
  */
-public class HistogramG {
-    private final int[] data;
+public class HistogramG<T>{
+    private final T[] data;
 
     
-
-    public HistogramG(int[] data) {
+    public HistogramG(T[] data) {
         this.data = data;
     }
     
     
-    public Map<Integer, Integer> getHistogram() {
-        Map<Integer, Integer>histogram = new HashMap<Integer, Integer>();
-        for(int numero:data){
-            histogram.put(numero, histogram.containsKey(numero)? histogram.get(numero)+1:1);
-           
+    public Map<T, Integer> getHistogram() {
+        Map<T, Integer>histogram = new HashMap<T, Integer>();
+        for(int i = 0; i< data.length; i++ ){
+            histogram.put(data[i], histogram.containsKey(data[i])? histogram.get(data[i])+1:1);
         }
-        return histogram;
+        return  histogram;
     }
 }
