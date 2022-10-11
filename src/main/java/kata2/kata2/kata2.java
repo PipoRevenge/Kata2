@@ -20,13 +20,10 @@ public class kata2 {
         int[] data = {1,2,2, 4,5,7,7,7,2,4,5,10,9, 1,0};
        
         
+        
         for(int numero:data){
-            if(histogram.keySet().contains(numero)){
-                histogram.put(numero, histogram.get(numero)+1);
-                
-            }else{
-                histogram.put(numero, 1);
-            }
+            histogram.put(numero, histogram.containsKey(numero)? histogram.get(numero)+1:1);
+           
         }
         
         
