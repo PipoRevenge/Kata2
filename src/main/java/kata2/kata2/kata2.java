@@ -15,17 +15,17 @@ import java.util.Map;
 
 public class kata2{
     public static void main(String[] args){
-        Map<Integer, Integer>histogram = new HashMap<Integer, Integer>();
-        Integer [] data = {1,2,2, 4,5,7,7,7,2,4,5,10,9, 1,0};
+        Map<String, Integer>histogram = new HashMap<String, Integer>();
+        String[] data = {"Rosa", "Pepe", "María", "Pepe", "Pepe", "Rosa"};
        
         
         
         HistogramG histograma2 = new HistogramG(data);
-        histogram = histograma2.getHistogram();
+        histogram =histograma2.getHistogram();
         
         
-        for (int numero:data) {
-            System.out.println( numero + "==>" + histogram.get(numero));
+        for (String nombre: histogram.keySet()){
+            System.out.println( nombre + "==>" + histogram.get(nombre));
         }
         
        
