@@ -21,10 +21,8 @@ public class kata2 {
        
         
         
-        for(int numero:data){
-            histogram.put(numero, histogram.containsKey(numero)? histogram.get(numero)+1:1);
-           
-        }
+        HistogramG histograma2 = new HistogramG(data);
+        histogram = histograma2.getHistogram();
         
         
         for (int numero:data) {
