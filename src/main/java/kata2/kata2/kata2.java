@@ -12,6 +12,8 @@ import java.util.Map;
  *
  * @author aleja
  */
+
+
 public class kata2 {
     public static void main(String[] args){
         Map<Integer, Integer>histogram = new HashMap<Integer, Integer>();
